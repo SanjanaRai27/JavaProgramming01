@@ -2,18 +2,18 @@
 //Bitwise Operators are the operators that can directly operate on the bit values.
 //sum of two numbers
 public class Second {
-    public static int Sums(int a,int b){
+    public static int Sum(int a,int b){
         if(b==0){
             return a;
         }else{
-            return Sums(a ^ b , (a & b)<<1);
+            return Sum(a ^ b , (a & b)<<1);
 
         }
 
     }
     public static void main(String[] args) {
         Second s=new Second();
-        int result=s.Sums(2,3);
+        int result=s.Sum(2,3);
         System.out.println(result);
     }
     
